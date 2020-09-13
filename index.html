@@ -6,13 +6,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Type your title here</title>
     <!-- Bootstrap Styles-->
-    <link rel="stylesheet" href="resources/styles/bootstrap.min.css">
-    <link rel="stylesheet" href="resources/styles/styles.css" />
+    <!-- <link rel="stylesheet" href="resources/styles/bootstrap.min.css">
+    <link rel="stylesheet" href="resources/styles/styles.css" /> -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="resources/styles/styles.css"/>
 </head>
 
 <body>
     <div class="container">
         <!-- WORK FROM INSIDE THIS CONTAINER-->
+        <h1 title="Rock-Paper-Scissors">Rock Paper Scissors</h1>
+        <div id="welcome-screen">
+            <form id="name-form">
+                <div>
+                    <label for="username">
+                        Your Name
+                    </label>
+                    <input id="username" name="username" placeholder="Enter Name Here....">
+                    <button id="start-game-button">Start Game!</button>
+                </div>
+
+            </form>
+        </div>
+        <div id="game-screen">
+            <div id="score-tally">
+                <p id="score">USER:0 CPU:0</p>
+                <div id="score-tally">
+                    <p id="score"></p>
+                </div>
+                <form id="game-form">
+                    <div>
+                        <label for="user-selection">Select your choice</label>
+                        <select id="user-selection" name="user-selection">
+                            <option>Rock</option>
+                            <option>Paper</option>
+                            <option>Scissors</option>
+                        </select>
+                        <button id="go-button">Go!</button>
+                        <p id="game-history"></p>
+                    </div>
+                </form>
+            </div>
+        </div>
 
     </div>
 
